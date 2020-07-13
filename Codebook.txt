@@ -1,0 +1,109 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the mean of the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ by individual and activity. 
+These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+As stated before, the dataset contains the mean and the mean of the standard deviation of all these features grouped by individual and activity.
+The full list of variables is listed below:
+1. Indinvidual: categorical variable from 1 to 30.
+2. Activity: categorical
+	-Walking
+	-Walking Upstairs
+	-Walking Downstairs
+	-Sitting
+	-Standing
+	-Laying
+3. tBodyAcc mean X: numeric.
+4. tBodyAcc mean Y: numeric.
+5. tBodyAcc mean Z: numeric.
+6. tBodyAcc std X: numeric.
+7. tBodyAcc std Y: numeric.
+8. tBodyAcc std Z: numeric.
+9. tGravityAcc mean X: numeric.
+10. tGravityAcc mean Y: numeric.
+11. tGravityAcc mean Z: numeric.
+12. tGravityAcc std X: numeric.
+13. tGravityAcc std Y: numeric.
+14. tGravityAcc std Z: numeric.
+15. tBodyAccJerk mean X: numeric.
+16. tBodyAccJerk mean Y: numeric.
+17. tBodyAccJerk mean Z: numeric.
+18. tBodyAccJerk std X: numeric.
+19. tBodyAccJerk std Y: numeric.
+20. tBodyAccJerk std Z: numeric.
+21. tBodyGyro mean X: numeric.
+22. tBodyGyro mean Y: numeric.
+23. tBodyGyro mean Z: numeric.
+24. tBodyGyro std X: numeric.
+25. tBodyGyro std Y: numeric.
+26. tBodyGyro std Z: numeric.
+27. tBodyGyroJerk mean X: numeric.
+28. tBodyGyroJerk mean Y: numeric.
+29. tBodyGyroJerk mean Z: numeric.
+30. tBodyGyroJerk std X: numeric.
+31. tBodyGyroJerk std Y: numeric.
+32. tBodyGyroJerk std Z: numeric.
+33. tBodyAccMag mean: numeric.
+34. tBodyAccMag std: numeric.
+35. tGravityAccMag mean: numeric.
+36. tGravityAccMag std: numeric.
+37. tBodyAccJerkMag mean: numeric.
+38. tBodyAccJerkMag std: numeric.
+39. tBodyGyroMag mean: numeric.
+40. tBodyGyroMag std: numeric.
+41. tBodyGyroJerkMag mean: numeric.
+42. tBodyGyroJerkMag std: numeric.
+43. fBodyAcc mean X: numeric.
+44. fBodyAcc mean Y: numeric.
+45. fBodyAcc mean Z: numeric.
+46. fBodyAcc std X: numeric.
+47. fBodyAcc std Y: numeric.
+48. fBodyAcc std Z: numeric.
+49. fBodyAccJerk mean X: numeric.
+50. fBodyAccJerk mean Y: numeric.
+51. fBodyAccJerk mean Z: numeric.
+52. fBodyAccJerk std X: numeric.
+53. fBodyAccJerk std Y: numeric.
+54. fBodyAccJerk std Z: numeric.
+55. fBodyGyro mean X: numeric.
+56. fBodyGyro mean Y: numeric.
+57. fBodyGyro mean Z: numeric.
+58. fBodyGyro std X: numeric.
+59. fBodyGyro std Y: numeric.
+60. fBodyGyro std Z: numeric.
+61. fBodyAccMag mean: numeric.
+62. fBodyAccMag std: numeric.
+63. fBodyBodyAccJerkMag mean: numeric.
+64. fBodyBodyAccJerkMag std: numeric.
+65. fBodyBodyGyroMag mean: numeric.
+66. fBodyBodyGyroMag std: numeric.
+67. fBodyBodyGyroJerkMag mean: numeric.
+68. fBodyBodyGyroJerkMag std: numeric.
+
+
